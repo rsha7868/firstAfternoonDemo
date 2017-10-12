@@ -50,7 +50,7 @@
                                 </state>
                                 <connections>
                                     <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Mq-lQ-1zO"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="o7S-gi-OOH"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="0nz-Nu-YUG"/>
                                 </connections>
                             </button>
                         </subviews>

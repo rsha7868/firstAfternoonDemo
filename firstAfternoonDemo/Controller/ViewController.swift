@@ -10,10 +10,11 @@ import UIKit
 
 class ViewController: UIViewController
 {
-
+private lazy var colorTools : ColorTools = ColorTools()
     @IBOutlet weak var firstButton: UIButton!
     
     @IBAction func firstMethod(_ sender: UIButton)
+        
     {
         if (firstButton.backgroundColor == .green )
         {
