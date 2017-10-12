@@ -42,5 +42,31 @@
             </objects>
             <point key="canvasLocation" x="40.799999999999997" y="42.728635682158924"/>
         </scene>
+        <!--SecondScreenController-->
+        <scene sceneID="EhH-kt-Xs9">
+            <objects>
+                <viewController title="SecondScreenController" id="TmZ-kz-jW8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LUR-v0-b1x"/>
+                        <viewControllerLayoutGuide type="bottom" id="IKG-xi-ok7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sgk-oI-JAE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcK-t1-LLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="117"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="c9P-Rj-0Vw">
+            <objects>
+                <viewControllerPlaceholder id="dYF-6o-Cux" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Cb-AM-dnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="24"/>
+        </scene>
     </scenes>
 </document>
