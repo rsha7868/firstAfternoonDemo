@@ -13,18 +13,19 @@ class ViewController: UIViewController
 
     @IBOutlet weak var firstButton: UIButton!
     
-    @IBAction func firstMethod(_ sender: Any)
+    @IBAction func firstMethod(_ sender: UIButton)
     {
-        if (firstButton.backgroundColor == .orange )
+        if (firstButton.backgroundColor == .green )
         {
-            firstButton.backgroundColor = .black
+            firstButton.backgroundColor = .blue
         }
         else
         {
-            firstButton.backgroundColor = .orange
+            firstButton.backgroundColor = .green
         }
+        firstButton.setTitleColor(createRandomColor(), for: .normal)
     }
-    
+   
     private func createRandomColor() -> UIColor
     {
         let newColor :UIColor
@@ -32,6 +33,8 @@ class ViewController: UIViewController
         let greenValue :CGFloat = CGFloat(Double (arc4random_uniform(256)) / 255.00)
         let blueValue :CGFloat = CGFloat(Double (arc4random_uniform(256)) / 255.00)
         newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: CGFloat(1.0))
+        
+        return newColor
     }
 
     override func viewDidLoad()

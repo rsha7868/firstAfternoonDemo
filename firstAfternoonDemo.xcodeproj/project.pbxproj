@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9AF5E10F1F88013100E871BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5E10E1F88013100E871BB /* AppDelegate.swift */; };
-		9AF5E1111F88013100E871BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5E1101F88013100E871BB /* ViewController.swift */; };
+		9AAEAA011F8FE3F6009C7ADA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAEA9FF1F8FE3F6009C7ADA /* ViewController.swift */; };
+		9AAEAA021F8FE3F6009C7ADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAEAA001F8FE3F6009C7ADA /* AppDelegate.swift */; };
+		9AAEAA051F8FE40D009C7ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AAEAA031F8FE40D009C7ADA /* Assets.xcassets */; };
+		9AAEAA061F8FE40D009C7ADA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AAEAA041F8FE40D009C7ADA /* Info.plist */; };
+		9AAEAA081F8FE42C009C7ADA /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9AAEAA071F8FE42C009C7ADA /* Base.lproj */; };
 		9AF5E1141F88013100E871BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF5E1121F88013100E871BB /* Main.storyboard */; };
-		9AF5E1161F88013100E871BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AF5E1151F88013100E871BB /* Assets.xcassets */; };
 		9AF5E1191F88013100E871BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF5E1171F88013100E871BB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9AAEA9FE1F8FE3F6009C7ADA /* firstAfternoonDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "firstAfternoonDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		9AAEA9FF1F8FE3F6009C7ADA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		9AAEAA001F8FE3F6009C7ADA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Controller/AppDelegate.swift; sourceTree = "<group>"; };
+		9AAEAA031F8FE40D009C7ADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		9AAEAA041F8FE40D009C7ADA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		9AAEAA071F8FE42C009C7ADA /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		9AF5E10B1F88013100E871BB /* firstAfternoonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstAfternoonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AF5E10E1F88013100E871BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AF5E1101F88013100E871BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AF5E1131F88013100E871BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9AF5E1151F88013100E871BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AF5E1181F88013100E871BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9AF5E11A1F88013100E871BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AC2C0B11F8D4EF3009BD7CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AAEAA071F8FE42C009C7ADA /* Base.lproj */,
+				9AF5E1171F88013100E871BB /* LaunchScreen.storyboard */,
+				9AF5E1121F88013100E871BB /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		9AF5E1021F88013100E871BB = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +68,30 @@
 		9AF5E10D1F88013100E871BB /* firstAfternoonDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9AF5E10E1F88013100E871BB /* AppDelegate.swift */,
-				9AF5E1101F88013100E871BB /* ViewController.swift */,
-				9AF5E1121F88013100E871BB /* Main.storyboard */,
-				9AF5E1151F88013100E871BB /* Assets.xcassets */,
-				9AF5E1171F88013100E871BB /* LaunchScreen.storyboard */,
-				9AF5E11A1F88013100E871BB /* Info.plist */,
+				9AF5E1211F8812DB00E871BB /* Controller */,
+				9AC2C0B11F8D4EF3009BD7CA /* View */,
+				9AF5E1201F88124A00E871BB /* Settings */,
 			);
 			path = firstAfternoonDemo;
+			sourceTree = "<group>";
+		};
+		9AF5E1201F88124A00E871BB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9AAEAA031F8FE40D009C7ADA /* Assets.xcassets */,
+				9AAEAA041F8FE40D009C7ADA /* Info.plist */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		9AF5E1211F8812DB00E871BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AAEAA001F8FE3F6009C7ADA /* AppDelegate.swift */,
+				9AAEA9FF1F8FE3F6009C7ADA /* ViewController.swift */,
+				9AAEA9FE1F8FE3F6009C7ADA /* firstAfternoonDemo-Bridging-Header.h */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					9AF5E10A1F88013100E871BB = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,8 +154,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AAEAA061F8FE40D009C7ADA /* Info.plist in Resources */,
 				9AF5E1191F88013100E871BB /* LaunchScreen.storyboard in Resources */,
-				9AF5E1161F88013100E871BB /* Assets.xcassets in Resources */,
+				9AAEAA081F8FE42C009C7ADA /* Base.lproj in Resources */,
+				9AAEAA051F8FE40D009C7ADA /* Assets.xcassets in Resources */,
 				9AF5E1141F88013100E871BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AF5E1111F88013100E871BB /* ViewController.swift in Sources */,
-				9AF5E10F1F88013100E871BB /* AppDelegate.swift in Sources */,
+				9AAEAA021F8FE3F6009C7ADA /* AppDelegate.swift in Sources */,
+				9AAEAA011F8FE3F6009C7ADA /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,11 +295,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = firstAfternoonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.firstAfternoonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "firstAfternoonDemo/firstAfternoonDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -275,11 +315,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = firstAfternoonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.firstAfternoonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "firstAfternoonDemo/firstAfternoonDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -303,6 +349,7 @@
 				9AF5E11F1F88013100E871BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
