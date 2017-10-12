@@ -20,18 +20,6 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESc-In-x4m">
-                                <rect key="frame" x="127" y="296" width="120" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Click here">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Mq-lQ-1zO"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
@@ -50,15 +38,28 @@
                         <viewControllerLayoutGuide type="top" id="LUR-v0-b1x"/>
                         <viewControllerLayoutGuide type="bottom" id="IKG-xi-ok7"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sgk-oI-JAE">
+                    <view key="view" contentMode="scaleToFill" id="sgk-oI-JAE" customClass="SecondScreenController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESc-In-x4m">
+                                <rect key="frame" x="127" y="296" width="120" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Click Here">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Mq-lQ-1zO"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="o7S-gi-OOH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcK-t1-LLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="117"/>
+            <point key="canvasLocation" x="674" y="43"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="c9P-Rj-0Vw">
