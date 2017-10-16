@@ -6,5 +6,6 @@
 //  Copyright © 2017 Sharp, Ryan. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
+public class SecondScreenController : UIViewController
