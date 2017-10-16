@@ -16,15 +16,8 @@ private lazy var colorTools : ColorTools = ColorTools()
     @IBAction func firstMethod(_ sender: UIButton)
         
     {
-        if (firstButton.backgroundColor == .green )
-        {
-            firstButton.backgroundColor = .blue
-        }
-        else
-        {
-            firstButton.backgroundColor = .green
-        }
-        firstButton.setTitleColor(createRandomColor(), for: .normal)
+        firstButton.backgroundColor = createRandomColor()
+        view.backgroundColor = createRandomColor()
     }
    
     private func createRandomColor() -> UIColor
