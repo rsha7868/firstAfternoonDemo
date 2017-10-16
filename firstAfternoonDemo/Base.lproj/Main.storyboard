@@ -20,27 +20,6 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <connections>
-                        <outlet property="firstButton" destination="ESc-In-x4m" id="0UP-DX-YFb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="40.799999999999997" y="42.728635682158924"/>
-        </scene>
-        <!--SecondScreenController-->
-        <scene sceneID="EhH-kt-Xs9">
-            <objects>
-                <viewController title="SecondScreenController" id="TmZ-kz-jW8" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LUR-v0-b1x"/>
-                        <viewControllerLayoutGuide type="bottom" id="IKG-xi-ok7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sgk-oI-JAE" customClass="SecondScreenController">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESc-In-x4m">
                                 <rect key="frame" x="127" y="296" width="120" height="74"/>
@@ -49,25 +28,19 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Mq-lQ-1zO"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="0nz-Nu-YUG"/>
+                                    <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPs-0j-Qdn"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="firstButton" destination="ESc-In-x4m" id="t9L-Kg-Xfy"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pcK-t1-LLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="43"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="c9P-Rj-0Vw">
-            <objects>
-                <viewControllerPlaceholder id="dYF-6o-Cux" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Cb-AM-dnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1948" y="24"/>
+            <point key="canvasLocation" x="40.799999999999997" y="42.728635682158924"/>
         </scene>
     </scenes>
 </document>
