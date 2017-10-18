@@ -31,6 +31,14 @@
                                     <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPs-0j-Qdn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFX-O5-6Nc">
+                                <rect key="frame" x="135" y="258" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Screen"/>
+                                <connections>
+                                    <segue destination="MeU-nA-A8O" kind="show" id="GNg-uc-1O0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -41,6 +49,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40.799999999999997" y="42.728635682158924"/>
+        </scene>
+        <!--Image Controller-->
+        <scene sceneID="2cQ-Dg-I8g">
+            <objects>
+                <viewController id="MeU-nA-A8O" customClass="ImageController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GrE-pm-pge"/>
+                        <viewControllerLayoutGuide type="bottom" id="XKk-ol-CJv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uwm-HZ-rpk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ro2-Uh-xTn">
+                                <rect key="frame" x="164" y="243" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFF-YO-A2W">
+                                <rect key="frame" x="150" y="310" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play/Pause"/>
+                                <connections>
+                                    <action selector="PlayButton:" destination="MeU-nA-A8O" eventType="touchUpInside" id="fQT-Zm-ErV"/>
+                                    <action selector="imageButton:" destination="MeU-nA-A8O" eventType="touchUpInside" id="0vp-BO-qnj"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0jp-Dt-4F1">
+                                <rect key="frame" x="128" y="404" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLL-Hc-D2Z">
+                                <rect key="frame" x="67" y="78" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageButton" destination="jLL-Hc-D2Z" id="2nA-At-dfB"/>
+                        <outlet property="PlayButton" destination="QFF-YO-A2W" id="zct-oE-psr"/>
+                        <outlet property="SoundSlider" destination="0jp-Dt-4F1" id="agc-U1-j8V"/>
+                        <outlet property="imageButton" destination="QFF-YO-A2W" id="V25-lE-Gr6"/>
+                        <outlet property="piture" destination="jLL-Hc-D2Z" id="7T5-cC-Z7I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXj-7a-M0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717.60000000000002" y="42.728635682158924"/>
         </scene>
     </scenes>
 </document>

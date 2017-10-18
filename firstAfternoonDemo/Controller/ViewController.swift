@@ -13,7 +13,11 @@ class ViewController: UIViewController
 private lazy var colorTools : ColorTools = ColorTools()
     @IBOutlet weak var firstButton: UIButton!
     
-    @IBAction func firstMethod(_ sender: UIButton)
+    @IBOutlet weak var piture: UIImageView!
+    @IBOutlet weak var imageButton: UIButton!
+    @IBOutlet weak var SoundSlider: UISlider!
+   
+        @IBAction func firstMethod(_ sender: UIButton)
         
     {
         firstButton.backgroundColor = createRandomColor()
@@ -42,7 +46,31 @@ private lazy var colorTools : ColorTools = ColorTools()
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func imageButton(_ sender: Any) {
+    }
+    
 
-
+    private func changeimage() -> Void
+    {
+        if (imageCounter > 2)
+        {
+            imageCounter = 0)
+        }
+        
+        if (imageCounter == 0)
+        {
+            imageFrame.image = UIImage(name: "Atomic.Bomb.jpg")
+        }
+        else if (imageCounter == 2)
+        {
+            imageFrame.image = UIImage(name: "Missle.1-1")
+        }
+        else
+        {
+            imaggeFrame.image = UIImage(named: "Nuke.jpg")
+        }
+        imageCounter += 1
+    }
+            
 }
 
