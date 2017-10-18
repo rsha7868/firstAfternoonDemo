@@ -36,7 +36,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change Screen"/>
                                 <connections>
-                                    <segue destination="MeU-nA-A8O" kind="show" id="GNg-uc-1O0"/>
+                                    <segue destination="MeU-nA-A8O" kind="show" id="v8Q-QA-2AM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,14 +67,35 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yaX-lQ-3rm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8E-ew-Xbf">
+                                        <rect key="frame" x="164" y="243" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVL-gM-Nq8">
+                                        <rect key="frame" x="150" y="310" width="74" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Play/Pause"/>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YWs-aY-Hu7">
+                                        <rect key="frame" x="128" y="404" width="118" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </slider>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O5Q-OF-ZMV">
+                                        <rect key="frame" x="67" y="78" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFF-YO-A2W">
                                 <rect key="frame" x="150" y="310" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play/Pause"/>
-                                <connections>
-                                    <action selector="PlayButton:" destination="MeU-nA-A8O" eventType="touchUpInside" id="fQT-Zm-ErV"/>
-                                    <action selector="imageButton:" destination="MeU-nA-A8O" eventType="touchUpInside" id="0vp-BO-qnj"/>
-                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0jp-Dt-4F1">
                                 <rect key="frame" x="128" y="404" width="118" height="30"/>
@@ -87,13 +108,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="ImageButton" destination="jLL-Hc-D2Z" id="2nA-At-dfB"/>
-                        <outlet property="PlayButton" destination="QFF-YO-A2W" id="zct-oE-psr"/>
-                        <outlet property="SoundSlider" destination="0jp-Dt-4F1" id="agc-U1-j8V"/>
-                        <outlet property="imageButton" destination="QFF-YO-A2W" id="V25-lE-Gr6"/>
-                        <outlet property="piture" destination="jLL-Hc-D2Z" id="7T5-cC-Z7I"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXj-7a-M0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
