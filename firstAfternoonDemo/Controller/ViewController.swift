@@ -6,7 +6,8 @@
 //  Copyright © 2017 Sharp, Ryan. All rights reserved.
 //
 
-import UIKitss
+import UIKits
+//Fix the bug for UIKit
 
 class ViewController: UIViewController
 {
@@ -52,27 +53,27 @@ private lazy var colorTools : ColorTools = ColorTools()
     }
     
 
-    //private func changeImage() -> Void
-    //{
-        //if (imageCounter > 3)
-        //{
-            //imageCounter = 0)
-        //}
+    private func changeImage() -> Void
+    {
+        if (imageCounter > 3)
+        {
+            imageCounter = 0
+        }
         
-        //if (imageCounter == 0)
-        //{
-            //imageFrame.image = UIImage(name: "Atomic.Bomb.jpg")
-        //}
-        //else if (imageCounter == 2)
-        //{
-            //imageFrame.image = UIImage(name: "Missle.1-1")
-        //}
-        //else
-        //{
-            //imaggeFrame.image = UIImage(named: "Nuke.jpg")
-        //}
-        //imageCounter += 1
-    //
+        if (imageCounter == 0)
+        {
+            imageFrame.image = UIImage(name: "Atomic.Bomb.jpg")
+        }
+        else if (imageCounter == 2)
+        {
+            imageFrame.image = UIImage(name: "Missle.1-1")
+        }
+        else
+        {
+            imaggeFrame.image = UIImage(named: "Nuke.jpg")
+        }
+        imageCounter += 1
+    }
     
     
     @IBAction func soundButton() -> Void
@@ -108,24 +109,24 @@ private lazy var colorTools : ColorTools = ColorTools()
     
     
     
-         private func loadAudioFile() -> Void
-         {
-            
-            if let soundURL = NSDataAsset(name: "")
-            {
-                Do
-                    {
-                        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayBack)
-                        try! AVAudioSession.sharedInstance().setAtive(true)
-                        
-                        try soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint:AVFileType.mp3.rawValue)
-                        soundSlider.maximumVAlue = Float ((soundPlayer?.duration)!)
-                        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector:(#selector(self.updatesSlider)), userInfo: nill, repeats: true)
-                    }
-                catch
-                {
-                    print("Audio File Load Error")
-                }
-            }
+//         private func loadAudioFile() -> Void
+//         {
+//            
+//            if let soundURL = NSDataAsset(name: "")
+//            {
+//                Do
+//                    {
+//                        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayBack)
+//                        try! AVAudioSession.sharedInstance().setAtive(true)
+//                        
+//                        try soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint:AVFileType.mp3.rawValue)
+//                        soundSlider.maximumVAlue = Float ((soundPlayer?.duration)!)
+//                        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector:(#selector(self.updatesSlider)), userInfo: nill, repeats: true)
+//                    }
+//                catch
+//                {
+//                    print("Audio File Load Error")
+//                }
+//            }
 }
 
